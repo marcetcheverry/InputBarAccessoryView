@@ -4,6 +4,7 @@
     - Swift 5 support
     - Fixes accessibility of HorizontalEdgePadding initializers and a typo in its filename
     - Breaking change: Support for vertical spacing in InputBarButtonItem
+    - Improves support for custom middle content views (see example of a Messages.app 'Subject + Message' implementation)
 - 4.2.2
     - Fix image paste orientation in `InputTextView`
 - 4.2.1 
