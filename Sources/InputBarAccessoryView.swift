@@ -556,7 +556,6 @@ open class InputBarAccessoryView: UIView {
                 middleContentViewHeightAnchor?.isActive = false || shouldForceMiddleContentViewMaxHeight
                 isOverMaxMiddleContentViewHeight = false
                 middleContentView.isScrollEnabled = false
-                middleContentView.invalidateIntrinsicContentSize()
             }
         }
         
