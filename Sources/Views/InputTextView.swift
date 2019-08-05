@@ -256,7 +256,7 @@ open class InputTextView: UITextView {
     /// Addes a new UIImage to the NSTextContainer as an NSTextAttachment
     ///
     /// - Parameter image: The image to add
-    private func pasteImageInTextContainer(with image: UIImage) {
+    open func pasteImageInTextContainer(with image: UIImage) {
         
         // Add the new image as an NSTextAttachment
         let attributedImageString = NSAttributedString(attachment: textAttachment(using: image))
@@ -294,7 +294,7 @@ open class InputTextView: UITextView {
     ///
     /// - Parameter image: The image to create an attachment with
     /// - Returns: The formatted NSTextAttachment
-    private func textAttachment(using image: UIImage) -> NSTextAttachment {
+    open func textAttachment(using image: UIImage) -> NSTextAttachment {
         
         guard let cgImage = image.cgImage else { return NSTextAttachment() }
         let scale = image.size.width / (frame.width - 2 * (textContainerInset.left + textContainerInset.right))
