@@ -211,7 +211,7 @@ open class InputTextView: UITextView {
     
     // MARK: - Notifications
     
-    private func postTextViewDidChangeNotification() {
+    func postTextViewDidChangeNotification() {
         NotificationCenter.default.post(name: UITextView.textDidChangeNotification, object: self)
     }
     
